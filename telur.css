@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+}
+
+header{
+    background:#ffcc29;
+    padding:1px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    background:url(awalayam.png);
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    padding: 0;
+}
+
+/* 1. Memastikan hitam transparan menutupi seluruh gambar */
+.overlay {
+    background: rgba(0, 0, 0, .45); /* Warna hitam transparan */
+    height: 100%; /* Menutupi tinggi elemen */
+    width: 100%; /* TAMBAHKAN INI: Memastikan menutupi seluruh lebar gambar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* 2. Menggeser judul ke atas (Ubah h2 menjadi h1 sesuai tag HTML Anda) */
+.overlay h1 {
+    font-size: 48px; 
+    margin-top: -40px; /* Gunakan nilai minus (-) untuk menarik posisi teks sedikit ke atas */
+    margin-bottom: 20px;
+}
+
+/* 3. Menggeser teks deksripsi ke bawah */
+.overlay p {
+    margin-top: 40px; /* Memperbesar margin atas untuk mendorong teks ke bawah */
+    margin-bottom: 40px; /* Memberi jarak dengan tombol WhatsApp */
+    font-size: 20px;
+}
+
+.btn{
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+.info-card .btn{
+
+    display:block;
+
+    width:85%;
+
+    margin:35px auto 0;
+
+    text-align:center;
+
+}
+.btn:hover{
+    background:#128C7E;
+}
+
+section{
+    padding:70px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card{
+    width:320px;
+    margin:auto;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.maps-container{
+    display:flex;
+    gap:25px;
+    align-items:stretch;
+    margin-top:40px;
+}
+
+.info-card{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.info-card h2{
+    text-align:left;
+    margin-bottom:25px;
+}
+
+.info-card p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.maps-container iframe{
+    flex:2;
+    height:350px;
+    border:none;
+    border-radius:15px;
+}
+@media(max-width:768px){
+
+    .maps-container{
+        flex-direction:column;
+    }
+
+    .maps-container iframe{
+        width:100%;
+        height:300px;
+    }
+
+    /* --- PERBAIKAN LOGO & HEADER DI HP --- */
+    .logo img{
+        width:40px; /* Mengecilkan ukuran gambar logo */
+        height:40px;
+    }
+
+    .logo{
+        text-decoration: none;
+        color: #333;
+    }
+
+    .logo span {
+        font-size: 16px; /* Mengecilkan ukuran teks agar muat berdampingan dengan tombol */
+        font-weight: 600;
+    }
+
+    /* --- PERBAIKAN TOMBOL BURGER --- */
+    #menu-btn{
+        display: block; /* Memunculkan tombol di HP */
+        z-index: 1005;  /* Menaruh tombol di lapisan paling atas agar bisa diklik */
+        color: #333;
+        position: relative; 
+    }
+
+    /* --- PERBAIKAN MENU NAVIGASI --- */
+    #navbar{
+        position:fixed;
+        top:0;
+        right:-100%; /* Sembunyikan menu di kanan layar sebelum diklik */
+        width:250px;
+        height:100vh;
+        background:#ffcc29; /* Warna disamakan dengan header kuning */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        transition:.4s;
+        z-index:999; /* Berada di bawah tombol burger */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    #navbar.active{
+        right:0; /* Menampilkan menu saat aktif */
+    }
+
+    #navbar a{
+        margin:20px 0;
+        font-size:22px;
+        margin-left: 0; /* Reset margin bawaan desktop */
+    }
+
+}
+.slider{
+
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    margin-top:40px;
+
+}
+
+.slide-track{
+
+    display:flex;
+    width:calc(300px * 10);
+    animation:scroll 25s linear infinite;
+
+}
+
+.slide-track img{
+
+    width:280px;
+    height:220px;
+
+    object-fit:cover;
+
+    margin-right:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+@keyframes scroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(calc(-300px * 5));
+    }
+
+}
+.slide-track:hover{
+
+    animation-play-state:paused;
+
+}
+.slide-track img{
+
+    transition:.3s;
+
+}
+
+.slide-track img:hover{
+
+    transform:scale(1.05);
+
+}
+.slider{
+    height:230px;
+    overflow:hidden;
+}
+.slide-track img{
+    display:block;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+@media(max-width:768px){
+
+.logo img{
+    width:35px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+}
+#menu-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+/* HP */
+
+@media(max-width:768px){
+
+/* --- PERBAIKAN TOMBOL BURGER --- */
+    #menu-btn {
+        display: block !important; /* Memaksa tombol untuk muncul di HP */
+        z-index: 1005;  
+        color: #333;
+        position: relative; 
+        background: none;
+        border: none;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+#navbar{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:250px;
+
+    height:100vh;
+
+    background:#ffc107;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+#navbar.active{
+
+    right:0;
+
+}
+
+#navbar a{
+
+    margin:20px 0;
+
+    font-size:22px;
+
+}
+
+}
+/* ================= INFO PRODUK ================= */
+.product-info {
+    text-align: center;
+    margin-top: 40px; /* Memberi jarak dari gambar yang bergerak */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08); /* Efek bayangan halus */
+}
+
+.product-info .price {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.product-info .price span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
+.product-info .disclaimer {
+    font-size: 14px;
+    color: #e74c3c; /* Warna merah agar menjadi perhatian */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.product-info .service-note {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-info .service-note i {
+    color: #ffcc29; /* Menyamakan dengan warna header */
+    font-size: 20px;
+}
+
+.btn-order-produk {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.info-card .btn {
+    display: block;
+    width: 85%;
+    margin: 35px auto 0;
+    text-align: center;
+    background: #4285F4; /* Warna Biru khas Google */
+}
+
+/* Tambahkan ini agar saat tombol disentuh/di-hover tidak berubah jadi hijau */
+.info-card .btn:hover {
+    background: #3367D6; /* Biru Google yang sedikit lebih gelap */
+}
+/* ================= KONTAK ================= */
+#kontak .container {
+    text-align: center; /* Memusatkan tombol dan isi yang ada di bagian kontak */
+}

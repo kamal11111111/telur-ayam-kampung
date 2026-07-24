@@ -1,243 +1,562 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<!DOCTYPE html>
-<html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bayan Farm & Egg menyediakan telur ayam kampung ras Elba unggulan yang segar langsung dari peternak di Klaten." />
+  <meta name="theme-color" content="#174b35" />
+  <title>Bayan Farm & Egg — Telur Ayam Kampung Segar</title>
+  
+    <!-- Judul & Meta Tag SEO -->
+  <title>Bayan Farm & Egg | Telur Ayam Kampung Segar & Berkualitas</title>
+  <meta name="description" content="Produsen telur ayam kampung segar langsung dari peternak terpercaya. Menyediakan kualitas terbaik dengan harga bersahabat untuk grosir dan eceran.">
+  <meta name="keywords" content="pak bayan farm & egg, telur ayam kampung klaten, telur klaten, supplier telur klaten, bayan farm, telur ayam kampung, jual telur ayam kampung, peternak telur ayam, grosir telur ayam, distributor telur ayam kampung, telur ayam kampung terdekat">
 
-    <title>Bayan Farm & Egg | Telur Ayam Kampung Segar & Berkualitas</title>
-    <meta name="description" content="Produsen telur ayam kampung segar langsung dari peternak terpercaya. Menyediakan kualitas terbaik dengan harga bersahabat untuk grosir dan eceran.">
-    <meta name="keywords" content="pak bayan farm & egg, telur ayam kampung klaten, telur klaten, supplier telur klaten, bayan farm, telur ayam kampung, jual telur ayam kampung, peternak telur ayam, telur segar, grosir telur ayam, distributor telur ayam kampung, telur ayam kampung terdekat">
+    <!-- Nama Brand & Media Sosial -->
+  <meta property="og:site_name" content="Bayan Farm & Egg">
+  <meta property="og:title" content="Bayan Farm & Egg - Telur Ayam Kampung Segar">
+  <meta property="og:description" content="Dapatkan telur ayam kampung kualitas terbaik langsung dari peternak dengan harga bersahabat.">
+  <meta property="og:image" content="https://bayanfarm.vercel.app/logoweb.png">
+  <meta property="og:url" content="https://bayanfarm.vercel.app">
+  <link rel="canonical" href="https://bayanfarm.vercel.app">
 
-    <!-- Mengganti Nama Situs dan Tulisan Vercel -->
-    <meta property="og:site_name" content="Bayan Farm & Egg">
-    <meta property="og:title" content="Bayan Farm & Egg - Telur Ayam Kampung Segar">
-    <meta property="og:description" content="Dapatkan telur ayam kampung kualitas terbaik langsung dari peternak dengan harga bersahabat.">
-    <meta property="og:image" content="https://bayanfarm.vercel.app/logoweb.png">
-    <meta property="og:url" content="https://bayanfarm.vercel.app">
-    <link rel="canonical" href="https://bayanfarm.vercel.app">
-
-    <!-- Mengganti Logo Bola Dunia -->
+    <!-- Favicon (Logo Website) -->
     <link rel="icon" type="image/png" href="logoweb.png">
 
-    <!-- Pemanggilan CSS dan Font -->
-    <link rel="stylesheet" href="telur.css">
-    <link rel="stylesheet" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Langsung ke isi</a>
 
-    <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand" aria-label="Bayan Farm & Egg, kembali ke beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M24 5c8 0 15 9 15 20 0 10-6 18-15 18S9 35 9 25C9 14 16 5 24 5Z" fill="currentColor"/>
+            <path d="M17 27c3 1 7-1 9-4 3 2 5 5 5 9-4 4-11 4-14-1-1-1-1-3 0-4Z" fill="#fff4cc"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Pak Bayan Farm & Egg</strong>
+          <small>Fresh Elba Eggs</small>
+        </span>
+      </a>
 
-    <header>
-        <div class="container">
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </button>
 
-            <a href="#" class="logo">
-                <img src="logo.png" alt="Logo">
-                <span> Bayan Farm & Egg </span>
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#kontak">Kontak</a>
+        <a class="nav-cta" href="#pesan">Pesan Telur</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="beranda">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            Dipanen segar setiap hari
+          </div>
+
+          <h1>Telur kampung <span>Elba unggulan</span>, segar dari kandang.</h1>
+          <p class="hero-description">
+            Telur bernutrisi dengan kuning lebih pekat, cangkang bersih, dan kualitas terjaga. Cocok untuk keluarga, warung makan, katering, hingga reseller.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#pesan" class="button button-primary">
+              Pesan sekarang
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
             </a>
+            <a href="#produk" class="button button-ghost">Lihat pilihan paket</a>
+          </div>
 
-            <nav id="navbar">
-
-                <a href="#tentang">Tentang</a>
-
-                <a href="#produk">Produk</a>
-
-                <a href="#lokasi">Lokasi</a>
-
-                <a href="#kontak">Kontak</a>
-
-            </nav>
-
-            <button id="menu-btn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
-
-        </div>
-
-    </header>
-
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
-
-        <div class="overlay">
-
-            <h1>Telur Ayam Kampung Segar Langsung dari Peternak</h1>
-
-            <p>
-
-                Kualitas Terbaik • Harga Bersahabat • Siap Grosir & Ecer
-
-            </p>
-
-            <a href="https://wa.me/6289523156254" target="_blank" class="btn">
-
-                Pesan via WhatsApp
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ================= TENTANG ================= -->
-
-    <section id="tentang">
-
-        <div class="container">
-
-            <h2>Tentang Kami</h2>
-
-            <p style="text-align: justify;">
-
-                Telur Ayam Kampung Elba adalah pilihan utama untuk Anda yang peduli dengan kualitas makanan dan kesehatan keluarga. Dihasilkan dari ayam ras Elba pilihan yang dirawat dengan pakan alami berkualitas, setiap butir telur Elba menjanjikan kemurnian dan kesegaran yang maksimal.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ================= PRODUK ================= -->
-
-    <!-- ================= PRODUK ================= -->
-
-    <section id="produk">
-
-        <div class="container">
-
-            <h2>Produk Kami</h2>
-
-            <div class="slider">
-
-                <div class="slide-track">
-
-                    <img src="telor1.jpg">
-                    <img src="telor2.jpg">
-                    <img src="telor3.jpg">
-                    <img src="telor4.jpg">
-                    <img src="telor5.jpg">
-                    <img src="telor6.jpg">
-
-                    <!-- Duplikat -->
-
-                    <img src="telor1.jpg">
-                    <img src="telor2.jpg">
-                    <img src="telor3.jpg">
-                    <img src="telor4.jpg">
-                    <img src="telor5.jpg">
-                    <img src="telor6.jpg">
-
-                </div>
-
-            </div> <!-- PENUTUP DIV SLIDER ADA DI SINI -->
-
-            <!-- PINDAHKAN KODE INI KE BAWAH PENUTUP SLIDER -->
-            <div class="product-info">
-                <h3 class="price">Harga: Rp 2.200 <span>/ biji</span></h3>
-                <p class="disclaimer">* Harga sewaktu-waktu dapat berubah</p>
-            
-                <div class="service-note">
-                    <i class="fa-solid fa-motorcycle"></i> Siap melayani pesan langsung dan pesan antar
-                </div>
-
-                <a href="https://wa.me/6289523156254" target="_blank" class="btn btn-order-produk">
-                Pesan Sekarang
-                </a>
+          <div class="trust-row" aria-label="Keunggulan utama">
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>Tanpa stok lama</span>
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= LOKASI ================= -->
-
-    <section id="lokasi">
-
-        <div class="container">
-
-            <h2>Lokasi Kami</h2>
-
-            <div class="maps-container">
-
-                <div class="info-card">
-
-                    <h3>Pak Bayan Farm & Egg</h3>
-
-                    <p>⭐ 5.0 (26 Ulasan)</p>
-
-                    <p>📍 Pucangan Timur, Banaran, Klaten</p>
-
-                    <p>📞 0895-2315-6254</p>
-
-                    <p>🕒 Buka 24 Jam</p>
-
-                    <a href="https://maps.app.goo.gl/UYXqHN3W7wnmqPU29"
-
-                        target="_blank"
-
-                        class="btn">
-
-                        Buka di Google Maps
-
-                    </a>
-
-                </div>
-
-                <iframe
-
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31634.607984080438!2d110.66689690500787!3d-7.648050589434039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a41a7cdef0c59%3A0x2092a65c19c38543!2sPak%20Bayan%20Farm%20%26%20Egg!5e0!3m2!1sid!2sid!4v1784162100647!5m2!1sid!2sid"
-
-                    loading="lazy">
-
-                </iframe>
-
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>Grosir & ecer</span>
             </div>
-
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>Siap antar</span>
+            </div>
+          </div>
         </div>
 
+        <div class="hero-visual reveal" aria-label="Ilustrasi telur ayam kampung Elba segar">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="egg-basket-card product-photo-hero">
+            <img
+              src="telor4.jpg"
+              alt="Telur ayam kampung ras Elba segar dari Bayan Farm"
+              width="800"
+              height="900"
+            >
+          </div>
+
+          <div class="floating-card rating-card">
+            <div class="avatar-stack">
+              <span>R</span><span>D</span><span>S</span>
+            </div>
+            <div>
+              <strong>5.0 ★</strong>
+              <small>Pelanggan puas</small>
+            </div>
+          </div>
+
+          <div class="floating-card fresh-card">
+            <span class="fresh-icon">24</span>
+            <div>
+              <strong>Jam</strong>
+              <small>Maksimal setelah panen</small>
+            </div>
+          </div>
+
+          <div class="hero-price-tag">
+            <small>Mulai dari</small>
+            <strong>Rp2.200</strong>
+            <span>/butir</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-stats reveal">
+        <div class="stat-item"><strong>100%</strong><span>Telur pilihan</span></div>
+        <div class="stat-item"><strong>24 jam</strong><span>Layanan pemesanan</span></div>
+        <div class="stat-item"><strong>5.0</strong><span>Rating pelanggan</span></div>
+        <div class="stat-item"><strong>Klaten</strong><span>Langsung peternak</span></div>
+      </div>
     </section>
 
-    <!-- ================= KONTAK ================= -->
+    <section class="ticker" aria-label="Informasi singkat">
+      <div class="ticker-track">
+        <span>SEGAR SETIAP HARI</span><i>●</i><span>RAS ELBA UNGGULAN</span><i>●</i><span>SIAP GROSIR & ECER</span><i>●</i><span>PENGIRIMAN AMAN</span><i>●</i>
+        <span>SEGAR SETIAP HARI</span><i>●</i><span>RAS ELBA UNGGULAN</span><i>●</i><span>SIAP GROSIR & ECER</span><i>●</i><span>PENGIRIMAN AMAN</span><i>●</i>
+      </div>
+    </section>
 
-    <section id="kontak">
+    <section class="section story-section" id="tentang">
+      <div class="container story-grid">
+        <div class="story-visual reveal">
+          <div class="farm-card">
+            <img
+              class="story-photo"
+              src="awalayam.png"
+              alt="Peternakan ayam ras Elba Bayan Farm"
+              loading="lazy"
+              onerror="this.remove()"
+            >
 
-        <div class="container">
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+            <div class="hill hill-back"></div>
+            <div class="hill hill-front"></div>
 
-            <h2>Hubungi Kami</h2>
-
-            <a href="https://wa.me/6289523156254"
-
-                target="_blank"
-
-                class="btn">
-
-                Chat WhatsApp
-
-            </a>
-
+          </div>
+          <div class="story-badge">
+            <strong>Dari peternak</strong>
+            <span>langsung ke meja makan</span>
+          </div>
         </div>
 
+        <div class="story-copy reveal">
+          <span class="section-kicker">Lebih dekat dengan sumbernya</span>
+          <h2>Bukan sekadar telur. Ini kualitas yang bisa Anda rasakan.</h2>
+          <p>
+            Ayam ras Elba kami dirawat dengan lingkungan kandang yang bersih dan pakan berkualitas. Telur dipilih satu per satu agar hanya telur terbaik yang sampai ke pelanggan.
+          </p>
+
+          <div class="feature-list">
+            <article class="mini-feature">
+              <span class="mini-icon">01</span>
+              <div><h3>Seleksi harian</h3><p>Telur retak atau tidak layak tidak masuk pengiriman.</p></div>
+            </article>
+            <article class="mini-feature">
+              <span class="mini-icon">02</span>
+              <div><h3>Lebih terjamin</h3><p>Asal produk jelas, langsung dari peternakan kami.</p></div>
+            </article>
+            <article class="mini-feature">
+              <span class="mini-icon">03</span>
+              <div><h3>Pesanan fleksibel</h3><p>Melayani kebutuhan rumah tangga maupun usaha.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <section class="section products-section" id="produk">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">Pilih sesuai kebutuhan</span>
+            <h2>Pilihan telur segar untuk semua.</h2>
+          </div>
+          <p>Harga dibuat sederhana dan transparan. Semua paket memakai telur Elba pilihan dengan kesegaran yang sama.</p>
+        </div>
 
-    <footer>
+        <div class="product-grid">
+          <article class="product-card reveal" data-package="Beli Per Butir" data-eggs="1">
+            <div class="product-image">
+              <img
+                src="telor3.jpg"
+                alt="Telur ayam kampung Elba dijual per butir"
+                loading="lazy"
+              >
+              <span class="product-label">Bebas jumlah</span>
+            </div>
+            <h3>Beli Per Butir</h3>
+            <p>Pilih jumlah telur sesuai kebutuhan tanpa harus membeli satu paket penuh.</p>
+            <div class="product-price"><strong>Rp2.200</strong><span>/ butir</span></div>
+            <ul>
+              <li>Mulai dari 1 butir</li>
+              <li>Telur segar terseleksi</li>
+              <li>Bisa ambil di lokasi</li>
+            </ul>
+            <button class="button button-dark product-order" type="button">Pilih pembelian</button>
+          </article>
 
-        © 2026 Bayan Farm & Egg
+          <article class="product-card featured reveal" data-package="Paket 10 Butir" data-eggs="10">
+            <span class="popular-ribbon">Paling praktis</span>
+            <div class="product-image">
+              <img
+                src="telor4.jpg"
+                alt="Paket telur ayam kampung Elba isi 10 butir"
+                loading="lazy"
+              >
+              <span class="product-label">Untuk harian</span>
+            </div>
+            <h3>Paket 10 Butir</h3>
+            <p>Pas untuk kebutuhan harian keluarga atau mencoba kualitas telur Elba.</p>
+            <div class="product-price"><strong>Rp22.000</strong><span>/ 10 butir</span></div>
+            <ul>
+              <li>Telur segar terseleksi</li>
+              <li>Dikemas aman dan rapi</li>
+              <li>Praktis untuk kebutuhan rumah</li>
+            </ul>
+            <button class="button button-primary product-order" type="button">Pilih paket</button>
+          </article>
 
-    </footer>
+          <article class="product-card reveal" data-package="Paket 30 Butir" data-eggs="30">
+            <div class="product-image">
+              <img
+                src="telor5.jpg"
+                alt="Paket telur ayam kampung Elba isi 30 butir"
+                loading="lazy"
+              >
+              <span class="product-label">Lebih banyak</span>
+            </div>
+            <h3>Paket 30 Butir</h3>
+            <p>Stok praktis untuk keluarga, dapur usaha kecil, atau pelanggan rutin.</p>
+            <div class="product-price"><strong>Rp66.000</strong><span>/ 30 butir</span></div>
+            <ul>
+              <li>Telur segar terseleksi</li>
+              <li>Tray kokoh dan rapi</li>
+              <li>Lebih praktis untuk stok</li>
+            </ul>
+            <button class="button button-dark product-order" type="button">Pilih paket</button>
+          </article>
+        </div>
 
-    <!-- ================= JAVASCRIPT ================= -->
+        <p class="price-note reveal">*Harga dapat disesuaikan sewaktu-waktu. Konfirmasi harga terbaru melalui WhatsApp.</p>
+      </div>
+    </section>
 
-    <script src="java.js"></script>
+    <section class="section benefits-section" id="keunggulan">
+      <div class="container">
+        <div class="center-heading reveal">
+          <span class="section-kicker light">Kenapa Bayan Farm?</span>
+          <h2>Kesegaran yang tidak perlu diragukan.</h2>
+          <p>Kami menjaga kualitas sejak telur dipanen, diseleksi, dikemas, sampai diterima pelanggan.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-number">01</span>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 0 7 4 7 9s-3 9-7 9-7-4-7-9 3-9 7-9Z"/><path d="M9 13c1 1 3 1 4-1 1 1 2 2 2 4"/></svg>
+            </div>
+            <h3>Ras Elba unggulan</h3>
+            <p>Produktif, berkualitas, dan menghasilkan telur kampung yang konsisten.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <span class="benefit-number">02</span>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14c4-7 8-8 16-8-1 8-5 12-12 12"/><path d="M4 20c3-5 7-8 12-10"/></svg>
+            </div>
+            <h3>Pakan berkualitas</h3>
+            <p>Perawatan dan pakan dijaga untuk membantu menghasilkan telur terbaik.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <span class="benefit-number">03</span>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h13v11H3Z"/><path d="M16 10h3l2 3v4h-5Z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+            </div>
+            <h3>Pengiriman aman</h3>
+            <p>Penataan telur diperhatikan agar risiko retak selama perjalanan lebih kecil.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <span class="benefit-number">04</span>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="m8 12 3 3 5-6"/></svg>
+            </div>
+            <h3>Kualitas terseleksi</h3>
+            <p>Setiap pesanan melewati pemeriksaan sebelum diserahkan kepada pelanggan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container process-grid">
+        <div class="process-copy reveal">
+          <span class="section-kicker">Dari kandang sampai rumah</span>
+          <h2>Proses singkat, kualitas tetap terjaga.</h2>
+          <p>Semakin pendek perjalanan produk, semakin baik kesegarannya. Karena itu kami mengutamakan proses yang cepat dan jelas.</p>
+          <a href="#pesan" class="text-link">Mulai pesan <span>→</span></a>
+        </div>
+
+        <div class="process-steps">
+          <article class="process-step reveal">
+            <span>1</span>
+            <div><h3>Dipanen</h3><p>Telur dikumpulkan rutin dari kandang.</p></div>
+          </article>
+          <article class="process-step reveal">
+            <span>2</span>
+            <div><h3>Diseleksi</h3><p>Kondisi cangkang dan kebersihan diperiksa.</p></div>
+          </article>
+          <article class="process-step reveal">
+            <span>3</span>
+            <div><h3>Dikemas</h3><p>Disusun dengan rapi sesuai jumlah pesanan.</p></div>
+          </article>
+          <article class="process-step reveal">
+            <span>4</span>
+            <div><h3>Dikirim</h3><p>Siap diambil atau diantar sesuai kesepakatan.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <div class="container">
+        <div class="promo-card reveal">
+          <div class="promo-copy">
+            <span class="promo-tag">LANGGANAN LEBIH PRAKTIS</span>
+            <h2>Tidak perlu takut kehabisan stok telur.</h2>
+            <p>Atur pesanan mingguan untuk rumah, warung, katering, atau toko Anda.</p>
+            <a href="#pesan" class="button button-light">Tanyakan paket langganan</a>
+          </div>
+          <div class="promo-art" aria-hidden="true">
+            <div class="promo-circle"></div>
+            <div class="promo-egg egg-a"></div>
+            <div class="promo-egg egg-b"></div>
+            <div class="promo-egg egg-c"></div>
+            <span class="promo-spark spark-one">✦</span>
+            <span class="promo-spark spark-two">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section" id="ulasan">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">Cerita pelanggan</span>
+            <h2>Dipilih karena segar, kembali karena puas.</h2>
+          </div>
+          <div class="slider-controls">
+            <button type="button" id="prevTestimonial" aria-label="Ulasan sebelumnya">←</button>
+            <button type="button" id="nextTestimonial" aria-label="Ulasan berikutnya">→</button>
+          </div>
+        </div>
+
+        <div class="testimonial-viewport reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“Telurnya bersih dan kelihatan masih baru. Kuning telurnya juga bagus, cocok untuk stok di rumah.”</blockquote>
+              <div class="customer"><span>R</span><div><strong>Rina</strong><small>Pelanggan keluarga</small></div></div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“Sudah beberapa kali pesan untuk warung. Respons cepat, jumlah sesuai, dan pengemasan rapi.”</blockquote>
+              <div class="customer"><span>D</span><div><strong>Dimas</strong><small>Pemilik warung makan</small></div></div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“Enak karena bisa pesan banyak dan langsung komunikasi lewat WhatsApp. Praktis untuk kebutuhan katering.”</blockquote>
+              <div class="customer"><span>S</span><div><strong>Sari</strong><small>Usaha katering</small></div></div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots" aria-label="Navigasi ulasan"></div>
+      </div>
+    </section>
+
+    <section class="section order-section" id="pesan">
+      <div class="container order-grid">
+        <div class="order-copy reveal">
+          <span class="section-kicker">Pesan dalam hitungan detik</span>
+          <h2>Hitung kebutuhan Anda, lalu kirim ke WhatsApp.</h2>
+          <p>Pilih paket dan jumlah. Sistem akan menyiapkan ringkasan pesanan secara otomatis.</p>
+          <div class="order-guarantee">
+            <span>✓</span>
+            <div><strong>Tanpa pembayaran di website</strong><small>Detail pembayaran dan pengiriman dikonfirmasi melalui WhatsApp.</small></div>
+          </div>
+        </div>
+
+        <form class="order-card reveal" id="orderForm">
+          <div class="form-group">
+            <label for="packageSelect">Pilih pembelian</label>
+            <div class="select-wrap">
+              <select id="packageSelect" name="package">
+                <option value="1">Beli per butir — 1 butir</option>
+                <option value="10" selected>Paket 10 butir</option>
+                <option value="30">Paket 30 butir</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Jumlah pembelian</label>
+            <div class="quantity-control">
+              <button type="button" id="decreaseQty" aria-label="Kurangi jumlah">−</button>
+              <input type="number" id="quantity" value="1" min="1" max="99" inputmode="numeric" aria-label="Jumlah pembelian" />
+              <button type="button" id="increaseQty" aria-label="Tambah jumlah">+</button>
+            </div>
+          </div>
+
+          <div class="order-summary">
+            <div><span>Total telur</span><strong id="totalEggs">10 butir</strong></div>
+            <div><span>Estimasi harga</span><strong id="totalPrice">Rp22.000</strong></div>
+          </div>
+
+          <button class="button button-whatsapp" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z"/><path d="M9 8.5c.3 2 2 3.7 4 4l1-1c.2-.2.4-.2.7-.1l2 .9c.3.1.4.4.3.7-.2 1-1.1 1.7-2.2 1.7-3.6-.1-6.6-3-6.7-6.6 0-1.1.7-2 1.7-2.2.3-.1.6.1.7.3l.9 2c.1.3.1.5-.1.7l-1.3 1Z"/></svg>
+            Kirim pesanan ke WhatsApp
+          </button>
+          <p class="form-note">Anda akan diarahkan ke WhatsApp Bayan Farm.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal">
+          <span class="section-kicker">Pertanyaan umum</span>
+          <h2>Sebelum pesan, mungkin ini yang ingin Anda tanyakan.</h2>
+          <p>Belum menemukan jawabannya? Hubungi kami langsung melalui WhatsApp.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <article class="faq-item active">
+            <button type="button" aria-expanded="true"><span>Apakah telur benar-benar baru?</span><i>+</i></button>
+            <div class="faq-answer"><p>Telur dikumpulkan secara rutin dan pesanan diprioritaskan dari stok segar yang tersedia.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>Apakah bisa pesan eceran?</span><i>+</i></button>
+            <div class="faq-answer"><p>Bisa. Anda dapat memilih paket kecil atau menanyakan jumlah khusus melalui WhatsApp.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>Apakah tersedia pengiriman?</span><i>+</i></button>
+            <div class="faq-answer"><p>Tersedia pesan antar dengan area dan biaya yang dikonfirmasi sesuai lokasi tujuan.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>Bisa berlangganan untuk usaha?</span><i>+</i></button>
+            <div class="faq-answer"><p>Bisa. Jadwal, jumlah, dan kebutuhan pengiriman dapat disepakati untuk pasokan rutin.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+      <div class="container contact-card reveal">
+        <div class="contact-content">
+          <span class="section-kicker light">Datang atau hubungi kami</span>
+          <h2>Telur segar lebih dekat dari yang Anda kira.</h2>
+          <div class="contact-list">
+            <div><span>Lokasi</span><strong>Pucangan Timur, Banaran, Klaten</strong></div>
+            <div><span>WhatsApp</span><strong>0895-2315-6254</strong></div>
+            <div><span>Jam layanan</span><strong>Setiap hari, 24 jam</strong></div>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-light" href="https://wa.me/6289523156254?text=Halo%20Bayan%20Farm%2C%20saya%20ingin%20bertanya%20tentang%20telur%20Elba." target="_blank" rel="noopener">Chat WhatsApp</a>
+            <a class="button button-outline-light" href="https://maps.app.goo.gl/UYXqHN3W7wnmqPU29" target="_blank" rel="noopener">Buka Google Maps</a>
+          </div>
+        </div>
+        <div class="map-art" aria-hidden="true">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31634.607983297068!2d110.6668969!3d-7.6480506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a41a7cdef0c59%3A0x2092a65c19c38543!2sPak%20Bayan%20Farm%20%26%20Egg!5e0!3m2!1sid!2sid!4v1784896882478!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#beranda" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 5c8 0 15 9 15 20 0 10-6 18-15 18S9 35 9 25C9 14 16 5 24 5Z" fill="currentColor"/><path d="M17 27c3 1 7-1 9-4 3 2 5 5 5 9-4 4-11 4-14-1-1-1-1-3 0-4Z" fill="#fff4cc"/></svg>
+          </span>
+          <span class="brand-copy"><strong>Bayan Farm</strong><small>Fresh Elba Eggs</small></span>
+        </a>
+        <p>Telur ayam kampung Elba segar langsung dari peternak untuk keluarga dan usaha Anda.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Jelajahi</strong>
+        <a href="#tentang">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#keunggulan">Keunggulan</a>
+      </div>
+      <div class="footer-links">
+        <strong>Hubungi</strong>
+        <a href="https://wa.me/6289523156254" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#kontak">Lokasi</a>
+        <a href="#pesan">Pesan telur</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> Pak Bayan Farm & Egg.</span>
+      <span>Dibuat dengan perhatian untuk UMKM lokal.</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/6289523156254?text=Halo%20Bayan%20Farm%2C%20saya%20ingin%20pesan%20telur%20Elba." target="_blank" rel="noopener" aria-label="Chat Bayan Farm melalui WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z"/><path d="M9 8.5c.3 2 2 3.7 4 4l1-1c.2-.2.4-.2.7-.1l2 .9c.3.1.4.4.3.7-.2 1-1.1 1.7-2.2 1.7-3.6-.1-6.6-3-6.7-6.6 0-1.1.7-2 1.7-2.2.3-.1.6.1.7.3l.9 2c.1.3.1.5-.1.7l-1.3 1Z"/></svg>
+    <span>Chat</span>
+  </a>
+
+  <div class="mobile-order-bar">
+    <div><small>Mulai dari</small><strong>Rp2.200/butir</strong></div>
+    <a href="#pesan">Pesan sekarang</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
